@@ -1,21 +1,113 @@
-/**index.wxss**/
-.userinfo {
+.home_header{
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: calc(100% - 40rpx);
+  height: 240rpx;
+  padding:0 20rpx;
+}
+.home_center{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: calc(100% - 20rpx);
+  height: calc(100% - 480rpx);
+  padding:10rpx;
+  background-color:green;
+}
+.home_footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 240rpx;
+  background-color:red;
+}
+.home_title{
+  font-size: 30rpx;
+  font-weight: 400;
+  color:#333;
+  line-height: 60rpx;
+}
+.btn_list{
+  width: calc(100% - 40rpx);
+  height: auto;
+  padding:10rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.home_grade{
+  width:100%;
+  height: 60rpx;
+  font-size: 30rpx;
+  font-weight: 400;
+  text-align: center;
+  color:#333;
+  line-height: 60rpx;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.btn_item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 180rpx;
+  height: 60rpx;
+  border:1px solid #dddddd;
+  background-color: #38f;
+  border-radius: 12rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color:#fff;
+  margin: 0;
+  padding: 0;
+  outline: none;
 }
-
-.usermotto {
-  margin-top: 200px;
+.b::before{
+  content: '♠';
+  font-size: 32rpx;
+  color: black;
+}
+.r::before{
+  content: '♥';
+  font-size: 32rpx;
+  color: red;
+}
+.m::before{
+  content: '♣';
+  font-size: 32rpx;
+  color: black;
+}
+.f::before{
+  content: '♦️';
+  font-size: 32rpx;
+  color: red;
+}
+.grade_list{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.grade_item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 120rpx;
+  height: 120rpx;
+  margin: 30rpx 30rpx;
+  font-size: 34rpx;
+  font-weight: 500;
+  border-radius: 12rpx;
+  border:1px solid #dddddd;
+  box-sizing: border-box;
 }

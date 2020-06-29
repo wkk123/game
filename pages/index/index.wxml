@@ -1,13 +1,27 @@
-<!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <view class="home_header">
+    <text class="home_title">选择游戏难度</text>
+    <view class='btn_list'>
+      <view class='btn_item' bindtap='btnItem' data-idx='{{0}}' plain="true">
+        <view class="b"></view>
+      </view>
+      <view class='btn_item' bindtap='btnItem' data-idx='{{1}}' plain="true">
+        <view class="b"></view>
+        <view class="r"></view>
+      </view>
+      <view class='btn_item' bindtap='btnItem' data-idx='{{2}}' plain="true">
+        <view class="b"></view>
+        <view class="r"></view>
+        <view class="m"></view>
+        <view class="f"></view>
+      </view>
+    </view>
+    <text class='home_grade'>{{gradeArr[gradeIndex]}}</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="home_center">
+    <view class='grade_list'>
+      <view class='grade_item' data-index='{{item+1}}' bindtap='gradeBtn' wx:for="{{99}}" wx:key="item" wx:for-item="item">{{item + 1}}</view>
+    </view>
   </view>
+  <view class="home_footer"></view>
 </view>
