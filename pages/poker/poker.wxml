@@ -8,13 +8,16 @@
     </view>
   </view>
   <view class='poker_center'>
-    <view class='center_item' data-index='{{item+1}}' bindtap='gradeBtn' wx:for="{{8}}" wx:key="item" wx:for-item="item">{{item + 1}}</view>
+    <view class='center_item' data-index='{{item+1}}' bindtap='gradeBtn' wx:for="{{10}}" wx:key="item" wx:for-item="item">{{item + 1}}</view>
   </view>
   <view class='poker_btn'>
     <view class='btn_item'>重置</view>
     <view class='btn_item'>撤销</view>
     <view class='btn_item' hidden="false"></view>
     <view class='btn_item' hidden="false"></view>
+  </view>
+  <view class='poker_box'>
+    <view class='poker_list'></view>
   </view>
   <view class='poker_ad'></view>
 </view>
